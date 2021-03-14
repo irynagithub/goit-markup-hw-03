@@ -22,7 +22,8 @@ ol {
     margin: 0;
     padding: 0;
 }
-img {
+img,
+a {
     display: block;
 }
 .link {
@@ -136,16 +137,19 @@ body {
     color: var(--add-text-color);
 }
 .footer {
-    height: 252px;
     background-color: var(--footer-color);
     display: flex;
     justify-content: center;
     padding-top: 60px;
+    padding-bottom: 60px;
 }
 .footer-address {
     line-height: 1.71;
     color: var(--footer-address-color);
-    margin-top: 8px;
+}
+.footer-address {
+    display: block;
+    margin-top: 9px;
 }
 .address {
     line-height: 1.71;
@@ -198,7 +202,6 @@ header {
     background-color: var(--background-color);
     padding-top: 25px;
     padding-bottom: 25px;
-    align-items: center;
     align-items: baseline;
 }
 .navigation {
@@ -228,13 +231,18 @@ header {
     margin-right: 108px;
 }
 .hero {
-    height: 600px;
     display: flex;
     background-color: var(--footer-color);
     margin: auto;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+.after-hero {
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 .our-team {
     display: flex;
@@ -266,8 +274,6 @@ header {
     display: flex;
     flex-direction: row;
     min-height: 101px;
-    margin-top: 94px;
-    margin-bottom: 94px;
 }
 .about-us-box {
     display: box;
@@ -277,8 +283,7 @@ header {
     margin-right: 30px;
 }
 .what-we-do {
-    height: 386px;
-    margin-bottom: 94px;
+    padding-bottom: 94px;
 }
 .what-we-do-img {
     margin-top: 50px;  
@@ -294,6 +299,7 @@ header {
     flex-direction: row;
     justify-content: center;
     margin-bottom: 34px;
+    margin-top: 94px;
 }
 .our-projets {
     margin-left: -30px;
@@ -310,15 +316,12 @@ header {
     margin-bottom: 30px;
     display: flex;
 }
-.project-item,
-.project-description {
-    margin-right: 24px;
-    margin-left: 24px;
-}
 .project-item {
-    margin-top: 20px;
     margin-bottom: 8px;
 }
-.project-description {
-    margin-bottom: 20px;
+.div-project-item {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 24px;
+    padding-left: 24px;
 }
