@@ -331,3 +331,20 @@ header {
     padding-right: 24px;
     padding-left: 24px;
 }
+.social-list-icon {
+    width: 20px;
+    height: 20px;
+}
+.social-list {
+    display: flex;
+    align-items: center;
+}
+.social-list-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: none;
+}
