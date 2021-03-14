@@ -338,6 +338,7 @@ header {
 .social-list {
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 .social-list-link {
     display: flex;
@@ -347,4 +348,8 @@ header {
     height: 44px;
     border-radius: 50%;
     background-color: none;
+}
+.social-list-link:hover,
+.social-list-link:focus {
+    background-color: var(--accent-color);
 }
