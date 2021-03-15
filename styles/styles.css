@@ -61,6 +61,9 @@ body {
 .navigation-link:focus {
     color: var(--accent-color);
 }
+.navigation-list .current {
+    color: var(--accent-color);
+}
 .email-link,
 .tel-link {
     font-weight: 500;
@@ -69,6 +72,10 @@ body {
 }
 .email-link:hover,
 .email-link:focus {
+    color: var(--accent-color);
+}
+.tel-link:hover,
+.tel-link:focus {
     color: var(--accent-color);
 }
 .modal-buttom {
@@ -202,12 +209,18 @@ header {
     background-color: var(--background-color);
     padding-top: 25px;
     padding-bottom: 25px;
-    align-items: baseline;
+    align-items: center;
+}
+.header .container {
+    display: flex;
+    align-items: center;
+}
+header{
+    border-bottom: 1px solid #ECECEC;
 }
 .navigation {
     display: flex;
     align-items: center;
-    box-sizing: content-box;
 }
 .navigation-list {
     display: flex;
@@ -215,7 +228,8 @@ header {
 }
 .contacts-list {
     display: flex;
-    justify-content: flex-end;
+    text-align: center;
+    margin-left: auto;
 }
 .email-link {
     margin-right: 50px;
@@ -308,18 +322,21 @@ header {
     margin-top: 94px;
 }
 .our-projets {
-    margin-left: -30px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
     margin-bottom: 94px;
+    margin-left: -30px;
+    margin-top: -30px;
+}
+.our-projets > .projects-list {
+    flex-basis: calc(100% / 3 - 30px);
+    margin-left: 30px;
+    margin-top: 30px;
 }
 .projects-list {
-    margin-right: 30px;
     border: solid;
     border-width: 1px;
     border-color: #EEEEEE;
-    margin-bottom: 30px;
     display: flex;
 }
 .project-item {
@@ -338,7 +355,8 @@ header {
 .social-list {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    margin-bottom: 20px;
+    justify-content: center;
 }
 .social-list-link {
     display: flex;
@@ -348,8 +366,31 @@ header {
     height: 44px;
     border-radius: 50%;
     background-color: none;
+    margin-right: 10px;
 }
 .social-list-link:hover,
 .social-list-link:focus {
     background-color: var(--accent-color);
+}
+.our-projets img {
+    max-width: 100%;
+}
+.footer-social-list {
+    display: inline-flex;
+}
+.footer-social-list .social-list-item:not(:last-child){
+    margin-right: 10px;
+}
+.join {
+    margin-bottom: 20px;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: var(--background-color);
+}
+.footer-social {
+    margin-top: 72px;
+    margin-left: 516px;
 }
